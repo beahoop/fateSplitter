@@ -21,7 +21,8 @@ Whether you're stuck between tacos or sushi, quitting your job or ghosting your 
 
 ## 📱 Screenshots
 
-![Fate Splitter Screenshot](./assets/screenshot1.png)
+![mobilescreenshot](https://github.com/user-attachments/assets/da6863a8-5cb3-459a-9440-a439f3e4d3eb)
+
 
 
 ---
