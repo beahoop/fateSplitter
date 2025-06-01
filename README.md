@@ -34,3 +34,45 @@ Whether you're stuck between tacos or sushi, quitting your job or ghosting your 
 ```bash
 git clone https://github.com/yourusername/fate-splitter.git
 cd fate-splitter
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn
+```
+
+### 3. Run it with Expo
+
+```bash 
+npx expo start
+```
+
+Then scan the QR code in your Expo Go app, run it on a simulator or as a web application. 
+
+---
+
+## 📂 Built With
+React Native — The framework powering the app
+
+Expo — For easy development and deployment
+
+expo-image — Supports animated GIFs and optimized image loading
+
+JavaScript (ES6+) — For all the decision-making logic
+
+✨ A sprinkle of sass and cosmic indecision
+
+---
+
+## 🐾 Credits
+Design & Development: Handcrafted with love by me 🌙
+
+Sparkly GIF background: GIPHY
+
+Fonts & visual drama: Courtesy of Expo defaults + pure chaos
+
+Inspiration: My own indecisiveness — and all the times I googled “flip a coin” instead of trusting my gut
+
