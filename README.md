@@ -70,7 +70,8 @@ JavaScript (ES6+) — For all the decision-making logic
 ## 🐾 Credits
 Design & Development: Handcrafted with love by me 🌙
 
-Sparkly GIF background: GIPHY
+Sparkly Background: Photo by <a href="https://unsplash.com/@maiq?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Tom Morel</a> on <a href="https://unsplash.com/photos/selective-focus-photography-of-black-gemstones-ktVazL5c7FM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
 
 Fonts & visual drama: Courtesy of Expo defaults + pure chaos
 
