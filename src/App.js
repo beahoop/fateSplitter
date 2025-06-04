@@ -84,7 +84,12 @@ export default function App() {
           style={StyleSheet.absoluteFill}
         />
 
-        {/* 🌫️ Animated Glitter Layer */}
+
+        {/* Dark overlay*/}
+        <View style={styles.overlay} />
+
+
+        {/* Animated Glitter Layer */}
         <Animated.View style={[StyleSheet.absoluteFill, glitterStyle]}>
           <ExpoImage
             source={require("../assets/fog.gif")}
@@ -92,9 +97,6 @@ export default function App() {
             style={StyleSheet.absoluteFill}
           />
         </Animated.View>
-
-        {/* Dark overlay*/}
-        <View style={styles.overlay} />
 
         {/* Logo */}
         <View style={styles.content}>

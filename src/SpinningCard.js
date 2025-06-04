@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { StyleSheet, View, Image, Text } from "react-native";
 import Animated, {
   useSharedValue,
@@ -43,8 +43,6 @@ export default function SpinningCard({ intro, chosenFate, trigger }) {
       backfaceVisibility: "hidden",
       opacity: rotation.value >= 90 ? 1 : 0,
       position: "absolute",
-      top: 0,
-      left: 0,
       width: cardWidth,
       height: cardHeight,
       justifyContent: "center",
@@ -80,10 +78,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 50,
-    // width: "100%",
-    // height: 500,
-    overflow: "visible", // crucial to avoid cut off
-    // perspective: 1500, // add perspective here too
+    width: "100%",
+    height: 500,
+
   },
   card: {
     width: cardWidth,
@@ -91,7 +88,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backfaceVisibility: "hidden",
-    overflow: "visible", // also on card
   },
   frontImage: {
     width: cardWidth - 10,
