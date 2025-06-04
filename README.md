@@ -10,12 +10,19 @@ Whether you're stuck between tacos or sushi, quitting your job or ghosting your 
 
 ## ✨ Features
 
-- Input two choices and let Fate decide
-- Animated GIF background for dramatic flair
-- Sassy, randomized messages to reveal your fate
-- "Ask Again" button to reset and re-roll
-- Mobile-friendly design with responsive layout
-- Designed with love, indecision, and a little chaos
+- 🔀 Divine My Fate: Input two choices and let the cosmos choose for you.
+
+- 💸 Coin Flip: Old school heads or tails — but fabulous.
+
+- 🔮 Ask the Oracle: Channel mystical forces for a magic 8-ball–style answer.
+
+- 🎴 Animated Cards with randomized sassy intros.
+
+- 🌈 Glitter overlay effects for that extra cosmic drama.
+
+- 🎨 Mobile-friendly layout with expressive visuals and responsive design.
+
+- 🧠 Designed with love, indecision, and a little chaos magic.
 
 ---
 
@@ -55,15 +62,17 @@ Then scan the QR code in your Expo Go app, run it on a simulator or as a web app
 ---
 
 ## 📂 Built With
-React Native — The framework powering the app
+React Native — The framework powering this mystical machine
 
-Expo — For easy development and deployment
+Expo — For streamlined development and cross-platform magic
 
-expo-image — Supports animated GIFs and optimized image loading
+react-native-reanimated — For card flips, fades, and animated flair
 
-JavaScript (ES6+) — For all the decision-making logic
+expo-image — For GIF support and smooth image loading
 
-✨ A sprinkle of sass and cosmic indecision
+JavaScript (ES6+) — For logic, chaos, and decision algorithms
+
+✨ A sprinkle of sass and stardust
 
 ---
 
