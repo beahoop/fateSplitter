@@ -1,7 +1,10 @@
 {
   "expo": {
-    "name": "fate-splitter",
-    "slug": "fate-splitter",
+    "name": "Fate Splitter",
+    "slug": "fateSplitter",
+    "experiments": {
+      "baseUrl": "/fateSplitter"
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
