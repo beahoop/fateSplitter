@@ -26,13 +26,9 @@ Whether you're stuck between tacos or sushi, quitting your job or ghosting your 
 
 ---
 
-## 📱 Screenshots
+## 📱 Screen recording
 
-![Screenshot 2025-06-04 at 5 22 47 PM](https://github.com/user-attachments/assets/6db413e3-e564-4fba-a73f-21bb4ec3335b)
-![Screenshot 2025-06-04 at 5 23 08 PM](https://github.com/user-attachments/assets/4f456f34-6cc4-44aa-b17e-c1151744b397)
-![Screenshot 2025-06-04 at 5 22 34 PM](https://github.com/user-attachments/assets/9f459ca9-95e7-42fd-8498-60984724dd93)
-![Screenshot 2025-06-04 at 5 23 22 PM](https://github.com/user-attachments/assets/968bc720-cad2-49e7-8f45-b18101adfa82)
-
+https://github.com/user-attachments/assets/a872de5f-fd13-4675-a4cb-d92c9ebbd1d8
 
 ---
 
