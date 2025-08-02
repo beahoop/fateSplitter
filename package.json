@@ -13,8 +13,10 @@
   "dependencies": {
     "@expo/metro-runtime": "~5.0.4",
     "babel-preset-expo": "~13.0.0",
+    "eas-cli": "^16.17.3",
     "expo": "~53.0.9",
     "expo-image": "~2.1.7",
+    "expo-navigation-bar": "^4.2.7",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",

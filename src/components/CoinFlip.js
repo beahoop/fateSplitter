@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -7,7 +7,10 @@ import Animated, {
   runOnJS,
   Easing,
 } from "react-native-reanimated";
+import themeStyles from "../styles/Theme.styles";
 import styles from "../styles/CoinFlip.styles.js";
+import buttonStyles from "../styles/Button.styles.js";
+import BackButton from "./BackButton";
 
 export default function CoinFlip({ onReset, triggerGlitter }) {
   const rotation = useSharedValue(0);
@@ -50,26 +53,37 @@ export default function CoinFlip({ onReset, triggerGlitter }) {
   };
 
   return (
-    <View style={styles.container}>
-      <Animated.View style={[styles.coin, animatedStyle]}>
-        <Image
-          source={getResultImage()}
-          style={styles.image}
-          resizeMode="contain"
-        />
-      </Animated.View>
-
-      {result && (
-        <>
-          <Text style={styles.label}>{result}</Text>
-          <TouchableOpacity style={styles.button} onPress={flipCoin}>
-            <Text style={styles.buttonText}>Flip Again</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={onReset}>
-            <Text style={styles.buttonText}>Back</Text>
-          </TouchableOpacity>
-        </>
-      )}
+    <View style={themeStyles.contentBox}>
+      <View style={themeStyles.cardBox}>
+        <Animated.View style={[styles.coin, animatedStyle]}>
+          <Image
+            source={getResultImage()}
+            style={styles.image}
+            resizeMode="contain"
+          />
+        </Animated.View>
+        <Text
+          style={[
+            styles.label,
+            !result && { opacity: 0 }, 
+          ]}
+        >
+          {result || " "}
+        </Text>
+      </View>
+      <View style={themeStyles.buttonBox}>
+        <TouchableOpacity
+          style={[
+            buttonStyles.button,
+            !result && { opacity: 0 },
+          ]}
+          onPress={flipCoin}
+          disabled={!result}
+        >
+          <Text style={buttonStyles.buttonText}>Flip Again</Text>
+        </TouchableOpacity>
+        <BackButton onReset={onReset} />
+      </View>
     </View>
   );
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { StyleSheet, View, Image, Text } from "react-native";
+import { View, Image, Text } from "react-native";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -8,7 +8,7 @@ import Animated, {
   runOnJS,
   Easing,
 } from "react-native-reanimated";
-import styles, {cardWidth, cardHeight} from "../styles/SpinningCard.styles.js";
+import styles, { cardWidth, cardHeight } from "../styles/SpinningCard.styles.js";
 
 export default function SpinningCard({ intro, chosenFate, trigger }) {
   const rotation = useSharedValue(0);
@@ -52,7 +52,7 @@ export default function SpinningCard({ intro, chosenFate, trigger }) {
   });
 
   return (
-    <View style={styles.container}>
+    <View style={styles.cardBox}>
       <Animated.View style={[styles.card, frontStyle]}>
         <Image
           source={require("./../../assets/frontofcard.png")}
@@ -70,4 +70,3 @@ export default function SpinningCard({ intro, chosenFate, trigger }) {
     </View>
   );
 }
-

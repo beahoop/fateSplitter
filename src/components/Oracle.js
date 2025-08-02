@@ -13,19 +13,10 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 import styles from "../styles/Oracle.styles.js";
+import buttonStyles from "../styles/Button.styles";
+import { responses } from "../responses.js"; 
+import BackButton from "./BackButton.js";
 
-const responses = [
-  "Yes, absolutely.",
-  "The signs point to no.",
-  "It’s unclear, ask again later.",
-  "Without a doubt.",
-  "My sources say no.",
-  "Possibly… if you believe.",
-  "The universe says maybe.",
-  "Definitely not today.",
-  "Yes, but tread carefully.",
-  "You already know the answer.",
-];
 
 export default function Oracle({
   onReset,
@@ -72,13 +63,11 @@ export default function Oracle({
         onChangeText={setQuestion}
       />
 
-      <TouchableOpacity style={styles.button} onPress={askOracle}>
-        <Text style={styles.buttonText}>Reveal the Oracle</Text>
+      <TouchableOpacity style={buttonStyles.button} onPress={askOracle}>
+        <Text style={buttonStyles.buttonText}>Reveal the Oracle</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button} onPress={onReset}>
-        <Text style={styles.buttonText}>Ask Another</Text>
-      </TouchableOpacity>
+      <BackButton onReset={onReset} />
     </View>
   );
 }

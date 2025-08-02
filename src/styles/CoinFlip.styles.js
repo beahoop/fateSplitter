@@ -24,18 +24,6 @@ const styles = StyleSheet.create({
     fontFamily: "Savoye LET",
     marginTop: 20,
   },
-  button: {
-    backgroundColor: "#E274E1",
-    padding: 12,
-    borderRadius: 10,
-    marginTop: 20,
-    width: 180,
-    alignItems: "center",
-  },
-  buttonText: {
-    color: "#fff",
-    fontSize: 16,
-  },
 });
 
 export default styles;

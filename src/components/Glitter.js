@@ -1,13 +1,9 @@
-import { useRef, forwardRef, useImperativeHandle } from "react";
+import { useImperativeHandle, forwardRef } from "react";
 import { StyleSheet } from "react-native";
 import { Image as ExpoImage } from "expo-image";
-import Animated, {
-  useSharedValue,
-  useAnimatedStyle,
-  withTiming,
-} from "react-native-reanimated";
+import Animated, { useSharedValue, useAnimatedStyle, withTiming } from "react-native-reanimated";
 
-const Glitter = forwardRef((props, ref) => {
+const GlitterOverlay = forwardRef((props, ref) => {
   const opacity = useSharedValue(0);
 
   const animatedStyle = useAnimatedStyle(() => ({
@@ -24,13 +20,7 @@ const Glitter = forwardRef((props, ref) => {
   }));
 
   return (
-    <Animated.View
-      style={[
-        StyleSheet.absoluteFill,
-        animatedStyle,
-        { pointerEvents: "none" },
-      ]}
-    >
+    <Animated.View style={[StyleSheet.absoluteFill, animatedStyle, { pointerEvents: "none" }]}>
       <ExpoImage
         source={require("./../../assets/glitter.gif")}
         contentFit="cover"
@@ -40,4 +30,4 @@ const Glitter = forwardRef((props, ref) => {
   );
 });
 
-export default Glitter;
+export default GlitterOverlay;
